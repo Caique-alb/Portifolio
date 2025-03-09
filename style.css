@@ -63,6 +63,7 @@ header > .interface{
 
 
 header a{
+    letter-spacing: 2px;
     color:#7d7d7d;
     text-decoration: none;
     display: inline-block;
