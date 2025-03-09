@@ -47,10 +47,10 @@ button:hover{
 
 /* estilo do cabeçalho */
 
-header{
+header {
+    display: flex;
     padding: 40px 4%;
-
-
+    justify-content: center;
 }
 
 header > .interface{
