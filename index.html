@@ -135,16 +135,6 @@
 
         </section><!--fim-portfolio-->
 
-
-
-
-
-
-
-
-
-
-
         <form action="https://api.staticforms.xyz/submit" method="post" id="myForm">
             <input type="text" name="name" id="name" placeholder="Nome">
             <input type="text" name="email" id="email" placeholder="Seu E-mail" />
@@ -153,42 +143,10 @@
             <input type="hidden" name="accessKey" value="756f3b8a-690d-43f9-b69a-257865d162c6">
             <input type="submit" value="Enviar"/>
         </form>
-    
-    
-    
-    
-    
-    
-    
-                <script>
-                  document.getElementById('myForm').addEventListener('submit', function(event) {
-                      event.preventDefault(); // Previne o comportamento padrão de submissão do formulário
-          
-                      // Obter os dados do formulário
-                      var formData = new FormData(this);
-          
-                      // Enviar os dados via AJAX
-                      var xhr = new XMLHttpRequest();
-                      xhr.open('POST', 'https://api.staticforms.xyz/submit');
-                      xhr.setRequestHeader('Content-Type', 'application/json');
-                      xhr.onload = function() {
-                          if (xhr.status === 200) {
-                              alert('Mensagem enviada com sucesso!');
-                              // Redirecionar o usuário para a página anterior
-                        document.getElementById('name').value = '';
-                        document.getElementById('email').value = '';
-                        document.getElementById('subject').value = '';
-                        document.getElementById('message').value = '';
-                              window.history.back();
-                          } else {
-                              alert('Erro ao enviar mensagem. Por favor, tente novamente mais tarde.');
-                          }
-                      };
-                      xhr.send(JSON.stringify(Object.fromEntries(formData.entries())));
-                  });
-              </script>
-
 
     </main>
+    
+    <script src="script.js"></script>
+
 </body>
 </html>

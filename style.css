@@ -92,12 +92,12 @@ header nav ul  li{
 
 
 
-.logo img{
+/* .logo img{
     max-width: 550px;
     max-height: 150px;
     width: auto;
     height: auto;
-}
+} */
 
 /* estilo do topo do site*/
 
@@ -239,6 +239,8 @@ section.portfolio .flex{
     background-position: 100% 100%;
 }
 
+
+
 /* estilo do form */
 #myForm {
     max-width: 400px;
@@ -268,3 +270,5 @@ section.portfolio .flex{
     background-color: #45a049;
   }
   
+  /* imagem projetos */
+
